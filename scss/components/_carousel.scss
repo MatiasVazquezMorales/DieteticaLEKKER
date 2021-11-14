@@ -1,0 +1,25 @@
+/*carrusel*/
+
+.imagenes{
+    width: 80%;
+    margin: 2rem auto;
+
+    &__img{
+        width: 980px;
+        height: 434px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /*------carousel------*/
+
+    .carrouselMobile{
+        margin: auto;
+        padding-top: 110px;
+
+        &__img{
+            width: 320px;
+            height: 142px;
+        }
+    }
+}    

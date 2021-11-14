@@ -1,0 +1,17 @@
+/* inicio footer*/
+
+.footer{
+    background-color: #D2D7D9;
+    width: 100%;
+
+    &__iconos{
+        display: inline;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-decoration: none;
+        color: white;
+        list-style: none;
+        font-size: 25px;
+    }
+}

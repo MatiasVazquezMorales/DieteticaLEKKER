@@ -1,0 +1,197 @@
+body{
+    background-image: url('../../imagenes/fondo.jpg');
+}
+
+.tipografiaPagina{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+a{  
+    text-decoration: none;
+    color: black;
+}
+
+.mobileNoDesktop{
+    display: none;
+}
+
+
+/*inicio de header*/
+
+header{
+    background-color: white;
+
+
+    h1{
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    
+    .animacion:hover{
+        animation: swing;
+        animation-duration: 2s;
+    }
+    
+    
+    .iconosHeader{
+        padding-top: 15px;
+    }
+}
+
+.centrar{
+    text-align: center;
+}
+
+
+/* inicio menu nav*/
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 1;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    list-style: none;
+
+    /*inicio*/
+    &__inicio{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+    &__inicio:hover{
+        transform: scale(1.02);
+        color: lightgrey;    }
+
+    /*productos*/
+    &__productos{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+        position: relative;
+    }
+    &__productos:hover{
+        transform: scale(1.02);
+       color:lightgrey;    }
+    &__productos:hover .subMenu{
+        display: block;
+    }
+
+    /*promociones*/
+    &__promociones{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+    &__promociones:hover{
+        transform: scale(1.02);
+       color:lightgrey;    }
+
+    /*contacto*/
+    &__contacto{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+    &__contacto:hover{
+        transform: scale(1.02);
+       color:lightgrey;    }
+
+    &__selector{
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+    }
+
+    /*nosotros*/
+    &__nosotros{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+    &__nosotros:hover{
+        transform: scale(1.02);
+       color:lightgrey;    }
+
+    /*faq*/
+    &__faq{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+    &__faq:hover{
+        transform: scale(1.02);
+       color:lightgrey;    }
+
+    a{
+        color: #3D3D3D;}
+
+
+    li{
+        display: inline;
+
+            .subMenu{
+                display: none;
+                position: absolute;
+                border: solid 1px black;
+                margin: 0px;
+                padding: 0px;
+                background-color: darkcyan;
+                list-style: none;
+                
+                li{
+                    display: block;
+                        
+                    :hover.subMenu{
+                        display: block;
+                    }
+                }
+            }
+        
+    }
+}
+
+.mobileNav{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+
+    .tipografiaPaginaMobile{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+        
+    .desktopNoMobile{
+        display: none;
+    }
+    
+    body{
+        background-image: url('../../imagenes/fondo.jpg');
+    }
+    
+
+    /*----nav-----*/
+
+    .mobileNav{
+        display: inline;
+    }
+
+    .imgMenu{
+        padding-left: 30px;
+    }
+
+    .tipografiaMenuMobile{
+        font-size: 30px;
+    }
+
+    .padding{
+        padding-top: 120px;
+    }
+}

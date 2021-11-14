@@ -1,0 +1,39 @@
+/*servicios*/
+
+.servicios{
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #434343;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+}
+
+@media screen and (max-width: 480px){
+     /*-------servicios------*/
+
+    .serviciosMobile{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        color: #434343;
+        padding-bottom: 0px;
+    }
+
+    .serviciosMobileFaq{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        color: #434343;
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    
+
+    .noMostrar{
+        display: none;
+    }
+}

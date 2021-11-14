@@ -1,0 +1,56 @@
+/*-------------------------FORMULARIO----------------------*/
+
+.formularioIndex{
+    display: grid;
+    width: 50%;
+    margin: auto;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: black;
+}
+
+    .formulario{
+    padding-top: 2%;
+    margin: auto;
+}
+
+
+    .espacioArriba{
+    padding-top: 18px;
+}
+
+/*----------------------FORMULARIO CONTACTO--------------------*/
+
+.formularioContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    &__bordeMedio{
+        border-left: solid 1px black;
+        padding-left: 100px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    /*-------formulario------*/
+
+    .contactoMobile{
+        display: grid;
+        width: 90%;
+        margin: auto;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+
+    .formularioMobile{
+        border-top: solid 1px black;
+        border-left: none;
+        padding-left: 10px;
+    }
+}

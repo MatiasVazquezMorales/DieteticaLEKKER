@@ -1,0 +1,16 @@
+/*-----------------------------PREGUNTAS---------------------------*/
+
+.preguntasTitulo{
+    color: green;
+    font-family:"Raleway", sans-serif;
+
+    &__texto{
+        padding-top: 0px;
+        font-family: "Raleway", sans-serif;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+}
+    

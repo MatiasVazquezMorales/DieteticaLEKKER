@@ -1,0 +1,331 @@
+body {
+  background-image: url("../../imagenes/fondo.jpg"); }
+
+.tipografiaPagina {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.mobileNoDesktop {
+  display: none; }
+
+/*inicio de header*/
+header {
+  background-color: white; }
+  header h1 {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  header .animacion:hover {
+    animation: swing;
+    animation-duration: 2s; }
+  header .iconosHeader {
+    padding-top: 15px; }
+
+.centrar {
+  text-align: center; }
+
+/* inicio menu nav*/
+.sticky {
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 1; }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  list-style: none;
+  /*inicio*/
+  /*productos*/
+  /*promociones*/
+  /*contacto*/
+  /*nosotros*/
+  /*faq*/ }
+  .menu__inicio {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px; }
+  .menu__inicio:hover {
+    transform: scale(1.02);
+    color: lightgrey; }
+  .menu__productos {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    position: relative; }
+  .menu__productos:hover {
+    transform: scale(1.02);
+    color: lightgrey; }
+  .menu__productos:hover .subMenu {
+    display: block; }
+  .menu__promociones {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px; }
+  .menu__promociones:hover {
+    transform: scale(1.02);
+    color: lightgrey; }
+  .menu__contacto {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px; }
+  .menu__contacto:hover {
+    transform: scale(1.02);
+    color: lightgrey; }
+  .menu__selector {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black; }
+  .menu__nosotros {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px; }
+  .menu__nosotros:hover {
+    transform: scale(1.02);
+    color: lightgrey; }
+  .menu__faq {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px; }
+  .menu__faq:hover {
+    transform: scale(1.02);
+    color: lightgrey; }
+  .menu a {
+    color: #3D3D3D; }
+  .menu li {
+    display: inline; }
+    .menu li .subMenu {
+      display: none;
+      position: absolute;
+      border: solid 1px black;
+      margin: 0px;
+      padding: 0px;
+      background-color: darkcyan;
+      list-style: none; }
+      .menu li .subMenu li {
+        display: block; }
+        .menu li .subMenu li :hover.subMenu {
+          display: block; }
+
+.mobileNav {
+  display: none; }
+
+@media screen and (max-width: 480px) {
+  .tipografiaPaginaMobile {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px; }
+  .desktopNoMobile {
+    display: none; }
+  body {
+    background-image: url("../../imagenes/fondo.jpg"); }
+  /*----nav-----*/
+  .mobileNav {
+    display: inline; }
+  .imgMenu {
+    padding-left: 30px; }
+  .tipografiaMenuMobile {
+    font-size: 30px; }
+  .padding {
+    padding-top: 120px; } }
+
+/*carrusel*/
+.imagenes {
+  width: 80%;
+  margin: 2rem auto; }
+  .imagenes__img {
+    width: 980px;
+    height: 434px; }
+
+@media screen and (max-width: 480px) {
+  /*------carousel------*/
+  .carrouselMobile {
+    margin: auto;
+    padding-top: 110px; }
+    .carrouselMobile__img {
+      width: 320px;
+      height: 142px; } }
+
+/*servicios*/
+.servicios {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  width: 100%;
+  color: #434343;
+  padding-bottom: 25px;
+  padding-top: 25px; }
+
+@media screen and (max-width: 480px) {
+  /*-------servicios------*/
+  .serviciosMobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    color: #434343;
+    padding-bottom: 0px; }
+  .serviciosMobileFaq {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    color: #434343;
+    padding-top: 70px;
+    padding-bottom: 30px; }
+  .noMostrar {
+    display: none; } }
+
+/*productos body*/
+.imagenesBody {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: auto;
+  padding-left: 3%; }
+  .imagenesBody__imagenes {
+    width: 250px;
+    height: 220px; }
+  .imagenesBody img:hover {
+    transform: scale(1.05); }
+
+.tipografiaBody {
+  text-align: center;
+  padding: 0%;
+  line-height: 20px; }
+
+@media screen and (max-width: 480px) {
+  /*------productos-------*/
+  .productosBodyMobile {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    padding-top: 10%; }
+    .productosBodyMobile__img {
+      width: 150px;
+      padding-bottom: 50px; } }
+
+/*boton todos los productos*/
+.botonTodos {
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  letter-spacing: 2px;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 50px; }
+  .botonTodos :hover {
+    transform: scale(1.02);
+    color: #7f8c8d; }
+
+/*-------------------------FORMULARIO----------------------*/
+.formularioIndex {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: black; }
+
+.formulario {
+  padding-top: 2%;
+  margin: auto; }
+
+.espacioArriba {
+  padding-top: 18px; }
+
+/*----------------------FORMULARIO CONTACTO--------------------*/
+.formularioContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  justify-content: space-evenly;
+  padding: 20px; }
+  .formularioContacto__bordeMedio {
+    border-left: solid 1px black;
+    padding-left: 100px; }
+
+@media screen and (max-width: 480px) {
+  /*-------formulario------*/
+  .contactoMobile {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+    padding-top: 50px; }
+  .formularioMobile {
+    border-top: solid 1px black;
+    border-left: none;
+    padding-left: 10px; } }
+
+/* inicio footer*/
+.footer {
+  background-color: #D2D7D9;
+  width: 100%; }
+  .footer__iconos {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: 25px; }
+
+.iconos {
+  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px; }
+
+/*-----------------------------PREGUNTAS---------------------------*/
+.preguntasTitulo {
+  color: green;
+  font-family: "Raleway", sans-serif; }
+  .preguntasTitulo__texto {
+    padding-top: 0px;
+    font-family: "Raleway", sans-serif; }
+
+.imagenPrincipal {
+  width: 100%;
+  height: 508px; }
+
+.recetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  padding-top: 110px;
+  padding-bottom: 80px;
+  padding-left: 60px; }
+  .recetas .img1 {
+    width: 350px;
+    height: 250px;
+    border: solid 3px black; }
+
+@media screen and (max-width: 480px) {
+  .imagenPrincipalMobile {
+    width: 110%;
+    height: 350px;
+    padding-top: 120px;
+    margin: auto;
+    text-align: center; }
+  .recetasMobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    padding-top: 35px;
+    padding-left: 0px;
+    width: 100%; }
+  .imgMobile {
+    width: 100px;
+    height: 50px;
+    border: solid 2px black; } }

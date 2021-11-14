@@ -1,0 +1,41 @@
+/*productos body*/
+
+.imagenesBody{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: auto;
+    padding-left: 3%;
+
+    &__imagenes{
+        width: 250px;
+        height: 220px;
+    }
+
+    img:hover{
+        transform: scale(1.05);
+    }  
+}
+
+.tipografiaBody{
+    text-align: center;
+    padding: 0%;
+    line-height: 20px;
+}
+
+
+@media screen and (max-width: 480px){
+    /*------productos-------*/
+
+    .productosBodyMobile{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+        padding-top: 10%;
+
+        &__img{
+            width: 150px;
+            padding-bottom: 50px;
+        }
+    }
+}
