@@ -4,21 +4,64 @@
     height: 508px;
 }
 
-.recetas {
+
+.contenedor{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    padding-top: 110px;
-    padding-bottom: 80px;
-    padding-left: 60px; 
+    align-items:center;
+    height: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-left: 60px;
+    
 
-    .img1{
-        width: 350px;
+    figure{
+        position: relative;
         height: 250px;
-        border: solid 3px black
-    }
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+        }
 
+        .cuadro{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            
+
+            p{
+                margin-top: 110px;
+                border:solid 3px black;
+                border-radius: 6px;
+                width: 40%;
+                padding: auto;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 500;
+                color: black;
+                opacity: 0;
+                background-color: rgba(243, 254, 176, 0.5);
+            }
+
+            p:hover{
+                transform: scale(1.2);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 }
+
+
 
 @media screen and (max-width: 480px){
     .imagenPrincipalMobile{
@@ -29,13 +72,33 @@
         text-align: center;
     }
 
-    .recetasMobile{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: auto;
-        padding-top: 35px;
-        padding-left: 0px;
+    .contenedor{
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items:center;
+        height: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-left: 60px;
+        
+    
+        figure{
+            position: relative;
+            height: 150px;
+            width: 200px;
+            overflow: hidden;
+            border-radius: 6px;
+            cursor: pointer;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+        }
     }
 
     .imgMobile{

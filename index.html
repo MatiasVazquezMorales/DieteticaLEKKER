@@ -14,37 +14,27 @@
     <title>LEKKER INICIO</title>
 </head>
 <body>
-
-  <!-----------------header------------------>
-  <header class="desktopNoMobile">
-    <h1 class="animacion desktopNoMobile"><img src="imagenes/LEKKER,.png" alt="logo" width="100"></h1>
-  </header>
-    
-    <!-----------------menu--------------------->            
-    <nav class="sticky desktopNoMobile" >
+<!---------------------HEADER y MENU--------------------->
+  <header class="sticky">
+    <nav class="desktopNoMobile logoMenu">
+      <a href="index.html"><img src="imagenes/LEKKER,.png" alt="" class="imgLogo"></a>
       <ul class="menu centrar">
           <li class="menu__inicio menu__selector "><a href="index.html">inicio</a></li>
-          <li class="menu__productos "><a href="productos.html">productos</a>
-              <ul class="subMenu">
-                  <li>mieles</li>
-                  <li>mermelada</li>
-                  <li>almohaditas</li>
-                  <li>cremas de mani</li>
-              </ul>
-          </li>
-          <li class="menu__promociones "><a href="recetas.html">recetas</a></li>
-          <li class="menu__contacto "><a href="contacto.html">contacto</a></li> 
+          <li class="menu__productos "><a href="productos.html">productos</a></li>
+          <li class="menu__recetas "><a href="recetas.html">recetas</a></li>
+          <li class="menu__contacto "><a href="contacto.html">contacto</a></li>
           <li class="menu__faq "><a href="faq.html">faq</a></li>
       </ul>
+      
   </nav>
-
+  </header>
 
 <!-------------------menu MOBILE----------------->
   
-<section class="mobileNav tipografiaMenuMobile tipografiaPaginaMobile">
-  <nav class="navbar navbar-light bg-light fixed-top">
+<section class="tipografiaMenuMobile tipografiaPaginaMobile mobileNav menuMobile">
+  <nav class="navbar navbar-light bg-light fixed-top sombra">
     <div class="container-fluid">
-      <a class="navbar-brand imgMenu" href="#"><img src="imagenes/LEKKER,.png" width="40%" alt=""></a>
+      <a class="navbar-brand imgMenu" href="index.html"><img src="imagenes/LEKKER,.png" width="40%" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -70,8 +60,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#"><a href="faq.html">faq</a></a>
             </li>
-            
-          
         </div>
       </div>
     </div>
@@ -83,7 +71,8 @@
 
 
 <!-------------------------CAROUSEL---------------------->
-    <div id="carouselExampleIndicators" class="carousel slide imagenes carrouselMobile" data-bs-ride="carousel">
+     <section class="fondo">
+      <div id="carouselExampleIndicators" class="carousel slide imagenes carrouselMobile" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -109,19 +98,20 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      </section>
 
 
 <!------------------------SERVICIOS-------------------------> 
       <section class="centrar tipografiaPagina servicios serviciosMobile desktopNoMobile">
         
         <div class="noMostrar">
-        <i class="fas fa-truck servicios__distancia">Envios a todo el pais</i> 
+        <i class="fas fa-truck servicios__distancia">ENVIOS A TODO EL PAIS</i> 
         </div>
         <div class="noMostrar">
-        <i class="fas fa-lock servicios__distancia servicios__bordes">Tus datos protegidos</i>
+        <i class="fas fa-lock servicios__distancia servicios__bordes">TUS DATOS PROTEGIDOS</i>
         </div>
         <div class="serviciosMobile">
-        <i class="fas fa-credit-card servicios__distancia serviciosMobile">Tarjetas de crédito, débito, MercadoPago o Transferencia Bancaria</i>
+        <i class="fas fa-credit-card servicios__distancia serviciosMobile">TARJETAS DE CREDITO, DEBITO, MERCADO PAGO, TRANSFERENCIA BANCARIA</i>
       </div>
       </section>
 
@@ -216,72 +206,28 @@
 <!-----------------------------BOTON TODOS---------------------------->
     <div class="centrar tipografiaPagina botonTodos"><a href="productos.html">ver todos los productos</a></div>
 
-<!--------------------------------FORMULARIO--------------------------->
-    <form action="guardar" class="formularioIndex noMostrar">
 
-            <div class="mb-3 row">
-                <label for="text" class="col-sm-2 col-form-label">Nombre</label>
-                <div class="col-sm-10">
-                <input type="text" class="form-control" id="text">
-                </div>
-            </div>
-          
-            <div class="mb-3 row">
-                <label for="text" class="col-sm-2 col-form-label">Apellido</label>
-                <div class="col-sm-10">
-                <input type="text" class="form-control" id="text">
-                </div>
-
-            <div class="mb-3 row espacioArriba">
-                <label for="text" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                <input type="text" class="form-control" id="text">
-                </div>
-            </div>
-
-            <div>
-                <label for="text">Donde vives:</label>
-                <select name="donde vives">
-                    <option value=""></option>
-                    <option value="argentina">argentina</option>
-                    <option value="brasil">brasil</option>
-                    <option value="bolivia">bolivia</option>
-                    <option value="chile">chile</option>
-                    <option value="uruguay">uruguay</option>
-                    <option value="paraguay">paraguay</option>
-                </select>
-            </div>
-
-            <div class="formulario">
-                <label for="text">Desea recibir novedades y promociones</label>
-                <input type="checkbox" name="aceptar" id="text">
-            </div>
-
-    
-            <div class="formulario">
-                <input type="submit" value="enviar formulario">
-                <input type="reset" value="borrar formulario">
-            </div>
-
-          </div>
-
-   </form>
-   
+   <hr>
 <!------------------------------FOOTER---------------------------->
-    <footer class="footer">
-        <nav>
-            <ul class="footer__iconos"> 
-                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/mati_vazquezmorales/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-        </nav>
-    </footer>
+<footer class="footer tipografiaPagina">
+  <div class="centrar">
+    <p>Diseñado por Matias Vazquez Morales</p>
+    <p>Buenos Aires, Argentina</p>
+  </div>
+    
+    <nav>
+        <ul class="footer__iconos"> 
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/mati_vazquezmorales/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </nav>
+</footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
 

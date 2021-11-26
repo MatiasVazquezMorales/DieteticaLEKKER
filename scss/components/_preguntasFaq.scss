@@ -3,11 +3,18 @@
 .preguntasTitulo{
     color: green;
     font-family:"Raleway", sans-serif;
+    text-align: center;
 
-    &__texto{
+    &__.texto{
         padding-top: 0px;
         font-family: "Raleway", sans-serif;
     }
+}
+
+
+.mapa{
+    width: 50%;
+    height: 250px;
 }
 
 @media screen and (max-width: 480px){

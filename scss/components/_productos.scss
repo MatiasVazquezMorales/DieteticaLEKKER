@@ -29,9 +29,9 @@
 
     .productosBodyMobile{
         display: grid;
-        grid-template-columns: 50% 50%;
-        margin: auto;
-        padding-top: 10%;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        padding-left: 20px;
 
         &__img{
             width: 150px;

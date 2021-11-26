@@ -1,5 +1,10 @@
-/*carrusel*/
+/*carousel*/
 
+
+.carousel{
+    padding-top: 10px;
+    
+}
 .imagenes{
     width: 80%;
     margin: 2rem auto;
@@ -15,7 +20,7 @@
 
     .carrouselMobile{
         margin: auto;
-        padding-top: 110px;
+        padding-top: 150px;
 
         &__img{
             width: 320px;

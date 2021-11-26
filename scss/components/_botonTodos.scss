@@ -6,12 +6,15 @@
     margin: auto;
     letter-spacing: 2px;
     padding: 15px;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 50px;
+    color: black;
+}
 
-    :hover {
-        transform: scale(1.02);
-        color: #7f8c8d;
-    }
+.botonTodos:hover{
+    transform: scale(1.05);
+}
 
+.botonTodos:hover a{
+    color: #7f8c8d;
 }

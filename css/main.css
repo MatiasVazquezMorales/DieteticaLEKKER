@@ -12,15 +12,17 @@ a {
 .mobileNoDesktop {
   display: none; }
 
+.distanciaArriba {
+  padding-top: 40px; }
+
 /*inicio de header*/
 header {
   background-color: white; }
-  header h1 {
+  header .imgLogo {
     width: fit-content;
     height: fit-content;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-bottom: 10px;
+    width: 100px; }
   header .animacion:hover {
     animation: swing;
     animation-duration: 2s; }
@@ -29,6 +31,18 @@ header {
 
 .centrar {
   text-align: center; }
+
+.logoMenu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 60px;
+  box-shadow: 0px 5px 6px 0px #adadad; }
 
 /* inicio menu nav*/
 .sticky {
@@ -41,13 +55,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 50%;
+  width: 100%;
   margin: auto;
   position: relative;
   list-style: none;
   /*inicio*/
   /*productos*/
-  /*promociones*/
+  /*recetas*/
   /*contacto*/
   /*nosotros*/
   /*faq*/ }
@@ -66,10 +80,10 @@ header {
     color: lightgrey; }
   .menu__productos:hover .subMenu {
     display: block; }
-  .menu__promociones {
+  .menu__recetas {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px; }
-  .menu__promociones:hover {
+  .menu__recetas:hover {
     transform: scale(1.02);
     color: lightgrey; }
   .menu__contacto {
@@ -120,10 +134,12 @@ header {
   .desktopNoMobile {
     display: none; }
   body {
-    background-image: url("../../imagenes/fondo.jpg"); }
+    background-image: url("../imagenes/fondo.jpg"); }
   /*----nav-----*/
   .mobileNav {
     display: inline; }
+  .sombra {
+    box-shadow: 0px 5px 6px 0px #adadad; }
   .imgMenu {
     padding-left: 30px; }
   .tipografiaMenuMobile {
@@ -131,7 +147,10 @@ header {
   .padding {
     padding-top: 120px; } }
 
-/*carrusel*/
+/*carousel*/
+.carousel {
+  padding-top: 10px; }
+
 .imagenes {
   width: 80%;
   margin: 2rem auto; }
@@ -143,7 +162,7 @@ header {
   /*------carousel------*/
   .carrouselMobile {
     margin: auto;
-    padding-top: 110px; }
+    padding-top: 150px; }
     .carrouselMobile__img {
       width: 320px;
       height: 142px; } }
@@ -166,7 +185,8 @@ header {
     grid-template-columns: 1fr;
     width: 100%;
     color: #434343;
-    padding-bottom: 0px; }
+    padding-bottom: 0px;
+    padding-top: 30px; }
   .serviciosMobileFaq {
     display: grid;
     grid-template-columns: 1fr;
@@ -174,6 +194,8 @@ header {
     color: #434343;
     padding-top: 70px;
     padding-bottom: 30px; }
+  .distanciaMobile {
+    padding-top: 70px; }
   .noMostrar {
     display: none; } }
 
@@ -199,9 +221,9 @@ header {
   /*------productos-------*/
   .productosBodyMobile {
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: auto;
-    padding-top: 10%; }
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    padding-left: 20px; }
     .productosBodyMobile__img {
       width: 150px;
       padding-bottom: 50px; } }
@@ -213,11 +235,15 @@ header {
   margin: auto;
   letter-spacing: 2px;
   padding: 15px;
-  padding-top: 20px;
-  padding-bottom: 50px; }
-  .botonTodos :hover {
-    transform: scale(1.02);
-    color: #7f8c8d; }
+  padding-top: 60px;
+  padding-bottom: 50px;
+  color: black; }
+
+.botonTodos:hover {
+  transform: scale(1.05); }
+
+.botonTodos:hover a {
+  color: #7f8c8d; }
 
 /*-------------------------FORMULARIO----------------------*/
 .formularioIndex {
@@ -247,6 +273,11 @@ header {
     border-left: solid 1px black;
     padding-left: 100px; }
 
+.tipografiaContacto {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  text-align: center; }
+
 @media screen and (max-width: 480px) {
   /*-------formulario------*/
   .contactoMobile {
@@ -263,8 +294,12 @@ header {
 
 /* inicio footer*/
 .footer {
-  background-color: #D2D7D9;
-  width: 100%; }
+  background-image: url("../../imagenes/ fondo.png");
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  margin: 0;
+  align-self: flex-end; }
   .footer__iconos {
     display: inline;
     display: flex;
@@ -290,26 +325,62 @@ header {
 /*-----------------------------PREGUNTAS---------------------------*/
 .preguntasTitulo {
   color: green;
-  font-family: "Raleway", sans-serif; }
-  .preguntasTitulo__texto {
+  font-family: "Raleway", sans-serif;
+  text-align: center; }
+  .preguntasTitulo__.texto {
     padding-top: 0px;
     font-family: "Raleway", sans-serif; }
+
+.mapa {
+  width: 50%;
+  height: 250px; }
 
 .imagenPrincipal {
   width: 100%;
   height: 508px; }
 
-.recetas {
+.contenedor {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: auto;
-  padding-top: 110px;
-  padding-bottom: 80px;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+  padding-top: 30px;
   padding-left: 60px; }
-  .recetas .img1 {
-    width: 350px;
+  .contenedor figure {
+    position: relative;
     height: 250px;
-    border: solid 3px black; }
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px; }
+    .contenedor figure img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out; }
+    .contenedor figure .cuadro {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center; }
+      .contenedor figure .cuadro p {
+        margin-top: 110px;
+        border: solid 3px black;
+        border-radius: 6px;
+        width: 40%;
+        padding: auto;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        color: black;
+        opacity: 0;
+        background-color: rgba(243, 254, 176, 0.5); }
+      .contenedor figure .cuadro p:hover {
+        transform: scale(1.2);
+        opacity: 1;
+        visibility: visible; }
 
 @media screen and (max-width: 480px) {
   .imagenPrincipalMobile {
@@ -318,13 +389,27 @@ header {
     padding-top: 120px;
     margin: auto;
     text-align: center; }
-  .recetasMobile {
+  .contenedor {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
-    padding-top: 35px;
-    padding-left: 0px;
-    width: 100%; }
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-left: 60px; }
+    .contenedor figure {
+      position: relative;
+      height: 150px;
+      width: 200px;
+      overflow: hidden;
+      border-radius: 6px;
+      cursor: pointer; }
+      .contenedor figure img {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
   .imgMobile {
     width: 100px;
     height: 50px;
