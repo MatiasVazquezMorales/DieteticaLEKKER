@@ -88,7 +88,10 @@ header{
     }
     &__inicio:hover{
         transform: scale(1.02);
-        color: lightgrey;    }
+    }
+    &__inicio:hover a{
+        color: rgb(166, 191, 75);
+    }
 
     /*productos*/
     &__productos{
@@ -98,7 +101,10 @@ header{
     }
     &__productos:hover{
         transform: scale(1.02);
-       color:lightgrey;    }
+    }
+    &__productos:hover a{
+        color: rgb(166, 191, 75);
+    }
     &__productos:hover .subMenu{
         display: block;
     }
@@ -110,7 +116,10 @@ header{
     }
     &__recetas:hover{
         transform: scale(1.02);
-       color:lightgrey;    }
+    }
+    &__recetas:hover a{
+        color: rgb(166, 191, 75);
+    }
 
     /*contacto*/
     &__contacto{
@@ -119,7 +128,10 @@ header{
     }
     &__contacto:hover{
         transform: scale(1.02);
-       color:lightgrey;    }
+    }
+    &__contacto:hover a{
+        color: rgb(166, 191, 75);
+    }
 
     &__selector{
         border-top: solid 1px black;
@@ -133,7 +145,10 @@ header{
     }
     &__nosotros:hover{
         transform: scale(1.02);
-       color:lightgrey;    }
+    }
+    &__nosotros:hover a{
+        color: rgb(166, 191, 75);
+    }
 
     /*faq*/
     &__faq{
@@ -142,7 +157,10 @@ header{
     }
     &__faq:hover{
         transform: scale(1.02);
-       color:lightgrey;    }
+    }
+    &__faq:hover a{
+        color: rgb(166, 191, 75);
+    }
 
     a{
         color: #3D3D3D;}

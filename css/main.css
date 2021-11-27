@@ -69,29 +69,33 @@ header {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px; }
   .menu__inicio:hover {
-    transform: scale(1.02);
-    color: lightgrey; }
+    transform: scale(1.02); }
+  .menu__inicio:hover a {
+    color: #a6bf4b; }
   .menu__productos {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     position: relative; }
   .menu__productos:hover {
-    transform: scale(1.02);
-    color: lightgrey; }
+    transform: scale(1.02); }
+  .menu__productos:hover a {
+    color: #a6bf4b; }
   .menu__productos:hover .subMenu {
     display: block; }
   .menu__recetas {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px; }
   .menu__recetas:hover {
-    transform: scale(1.02);
-    color: lightgrey; }
+    transform: scale(1.02); }
+  .menu__recetas:hover a {
+    color: #a6bf4b; }
   .menu__contacto {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px; }
   .menu__contacto:hover {
-    transform: scale(1.02);
-    color: lightgrey; }
+    transform: scale(1.02); }
+  .menu__contacto:hover a {
+    color: #a6bf4b; }
   .menu__selector {
     border-top: solid 1px black;
     border-bottom: solid 1px black; }
@@ -99,14 +103,16 @@ header {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px; }
   .menu__nosotros:hover {
-    transform: scale(1.02);
-    color: lightgrey; }
+    transform: scale(1.02); }
+  .menu__nosotros:hover a {
+    color: #a6bf4b; }
   .menu__faq {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px; }
   .menu__faq:hover {
-    transform: scale(1.02);
-    color: lightgrey; }
+    transform: scale(1.02); }
+  .menu__faq:hover a {
+    color: #a6bf4b; }
   .menu a {
     color: #3D3D3D; }
   .menu li {
@@ -149,22 +155,24 @@ header {
 
 /*carousel*/
 .carousel {
-  padding-top: 10px; }
+  width: 100%; }
 
 .imagenes {
-  width: 80%;
-  margin: 2rem auto; }
-  .imagenes__img {
-    width: 980px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0; }
+  .imagenes img {
+    width: 100%;
     height: 434px; }
 
 @media screen and (max-width: 480px) {
   /*------carousel------*/
   .carrouselMobile {
     margin: auto;
-    padding-top: 150px; }
+    padding-top: 120px;
+    width: 100%; }
     .carrouselMobile__img {
-      width: 320px;
+      width: 100%;
       height: 142px; } }
 
 /*servicios*/
@@ -184,18 +192,18 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    color: #434343;
-    padding-bottom: 0px;
-    padding-top: 30px; }
+    color: #434343; }
+    .serviciosMobile__.distanciaMobile {
+      padding: 10px; }
   .serviciosMobileFaq {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
     color: #434343;
     padding-top: 70px;
-    padding-bottom: 30px; }
+    padding-bottom: 20px; }
   .distanciaMobile {
-    padding-top: 70px; }
+    padding-top: 80px; }
   .noMostrar {
     display: none; } }
 
@@ -246,30 +254,27 @@ header {
   color: #7f8c8d; }
 
 /*-------------------------FORMULARIO----------------------*/
-.formularioIndex {
-  display: grid;
-  width: 50%;
-  margin: auto;
-  justify-content: space-evenly;
-  padding: 20px;
-  color: black; }
-
 .formulario {
-  padding-top: 2%;
-  margin: auto; }
+  color: black; }
+  .formulario input[type=text] {
+    background-color: #a6bf4b;
+    color: black;
+    border-radius: 7px; }
+    .formulario input[type=text] input[type=submit] {
+      padding-top: 10px; }
 
 .espacioArriba {
   padding-top: 18px; }
 
 /*----------------------FORMULARIO CONTACTO--------------------*/
-.formularioContacto {
+.contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
   margin: auto;
   justify-content: space-evenly;
   padding: 20px; }
-  .formularioContacto__bordeMedio {
+  .contacto__bordeMedio {
     border-left: solid 1px black;
     padding-left: 100px; }
 
@@ -294,7 +299,6 @@ header {
 
 /* inicio footer*/
 .footer {
-  background-image: url("../../imagenes/ fondo.png");
   width: 100%;
   height: 100%;
   padding-top: 0;
@@ -339,48 +343,39 @@ header {
   width: 100%;
   height: 508px; }
 
-.contenedor {
+.recetas {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 100%;
   justify-content: space-evenly;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   padding-top: 30px;
-  padding-left: 60px; }
-  .contenedor figure {
-    position: relative;
-    height: 250px;
+  padding-left: 60px;
+  grid-template-rows: 350px; }
+  .recetas img {
     width: 350px;
-    overflow: hidden;
-    border-radius: 6px; }
-    .contenedor figure img {
-      width: 100%;
-      height: 100%;
-      transition: all 500ms ease-out; }
-    .contenedor figure .cuadro {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      text-align: center; }
-      .contenedor figure .cuadro p {
-        margin-top: 110px;
-        border: solid 3px black;
-        border-radius: 6px;
-        width: 40%;
-        padding: auto;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: 500;
-        color: black;
-        opacity: 0;
-        background-color: rgba(243, 254, 176, 0.5); }
-      .contenedor figure .cuadro p:hover {
-        transform: scale(1.2);
-        opacity: 1;
-        visibility: visible; }
+    height: 250px;
+    border: solid 3px black;
+    border-radius: 10px; }
+  .recetas .imagenesRecetas {
+    position: relative; }
+  .recetas ul {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    display: none; }
+  .recetas li {
+    padding-top: 5px; }
+  .recetas .imagenesRecetas:hover ul {
+    display: block;
+    animation: backInLeft;
+    animation-duration: 1s; }
 
 @media screen and (max-width: 480px) {
   .imagenPrincipalMobile {
@@ -389,27 +384,40 @@ header {
     padding-top: 120px;
     margin: auto;
     text-align: center; }
-  .contenedor {
+  .recetas {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     height: 100%;
     justify-content: space-evenly;
     margin-bottom: 0px;
     padding-top: 30px;
-    padding-left: 60px; }
-    .contenedor figure {
-      position: relative;
-      height: 150px;
-      width: 200px;
-      overflow: hidden;
-      border-radius: 6px;
-      cursor: pointer; }
-      .contenedor figure img {
-        width: 100%;
-        height: 100%;
-        transition: all 500ms ease-out; }
+    padding-left: 35px;
+    padding-bottom: 10px;
+    grid-template-rows: 250px; }
+    .recetas img {
+      width: 350px;
+      height: 250px;
+      border: solid 3px black;
+      border-radius: 10px; }
+    .recetas .imagenesRecetas {
+      position: relative; }
+    .recetas ul {
+      position: absolute;
+      top: 0;
+      width: 350px;
+      height: 250px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      font-size: 18px;
+      display: none; }
+    .recetas li {
+      padding-top: 5px; }
+    .recetas .imagenesRecetas:hover ul {
+      display: block;
+      animation: backInLeft;
+      animation-duration: 1s; }
   .imgMobile {
     width: 100px;
     height: 50px;

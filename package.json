@@ -267,5 +267,13 @@
     "yallist": "^4.0.0",
     "yargs": "^13.3.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasVazquezMorales/DieteticaLEKKER.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatiasVazquezMorales/DieteticaLEKKER/issues"
+  },
+  "homepage": "https://github.com/MatiasVazquezMorales/DieteticaLEKKER#readme",
   "description": ""
 }

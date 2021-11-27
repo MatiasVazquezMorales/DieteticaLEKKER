@@ -1,17 +1,19 @@
 /*-------------------------FORMULARIO----------------------*/
-
-.formularioIndex{
-    display: grid;
-    width: 50%;
-    margin: auto;
-    justify-content: space-evenly;
-    padding: 20px;
-    color: black;
-}
-
     .formulario{
-    padding-top: 2%;
-    margin: auto;
+    color: black;
+    
+        input[type=text] {
+            background-color: rgb(166, 191, 75);
+            color: black;
+            border-radius: 7px;
+        
+        input[type=submit]{
+            padding-top: 10px;
+        }
+            
+        
+        }
+
 }
 
 
@@ -21,7 +23,7 @@
 
 /*----------------------FORMULARIO CONTACTO--------------------*/
 
-.formularioContacto{
+.contacto{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
@@ -34,6 +36,8 @@
         padding-left: 100px;
     }
 }
+
+
 
 .tipografiaContacto{
     font-family: 'Bebas Neue', cursive;

@@ -4,63 +4,52 @@
     height: 508px;
 }
 
-
-.contenedor{
+.recetas{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items:center;
-    height: 100%;
-    justify-content: space-evenly;
-    margin-bottom: 0px;
-    padding-top: 30px;
-    padding-left: 60px;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-left: 60px;
+  grid-template-rows: 350px;
 
-    figure{
-        position: relative;
-        height: 250px;
-        width: 350px;
-        overflow: hidden;
-        border-radius: 6px;
-        
-        img{
-            width: 100%;
-            height: 100%;
-            transition: all 500ms ease-out;
-        }
 
-        .cuadro{
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            
+  img{
+      width: 350px;
+      height: 250px;
+      border: solid 3px black;
+      border-radius: 10px;
+  }
 
-            p{
-                margin-top: 110px;
-                border:solid 3px black;
-                border-radius: 6px;
-                width: 40%;
-                padding: auto;
-                margin-left: auto;
-                margin-right: auto;
-                font-weight: 500;
-                color: black;
-                opacity: 0;
-                background-color: rgba(243, 254, 176, 0.5);
-            }
+  .imagenesRecetas{
+      position: relative;
+  }
 
-            p:hover{
-                transform: scale(1.2);
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-    }
+  ul{
+      position: absolute;
+      top: 0;
+      width: 350px;
+      height: 250px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      font-size: 18px;
+      display: none;
+  }
+
+  li{
+      padding-top: 5px;
+  }
+
+    .imagenesRecetas:hover ul{
+      display: block;
+      animation: backInLeft;
+      animation-duration: 1s;
+  }
+  
 }
-
 
 
 @media screen and (max-width: 480px){
@@ -72,33 +61,55 @@
         text-align: center;
     }
 
-    .contenedor{
+    .recetas{
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:1fr;
         align-items:center;
         height: 100%;
         justify-content: space-evenly;
         margin-bottom: 0px;
         padding-top: 30px;
-        padding-left: 60px;
+        padding-left: 35px;
+        padding-bottom: 10px;
+        grid-template-rows: 250px;
+
+        
         
     
-        figure{
-            position: relative;
-            height: 150px;
-            width: 200px;
-            overflow: hidden;
-            border-radius: 6px;
-            cursor: pointer;
-            
-            img{
-                width: 100%;
-                height: 100%;
-                transition: all 500ms ease-out;
-            }
-    
+        img{
+            width: 350px;
+            height: 250px;
+            border: solid 3px black;
+            border-radius: 10px;
         }
+      
+        .imagenesRecetas{
+            position: relative;
+        }
+      
+        ul{
+            position: absolute;
+            top: 0;
+            width: 350px;
+            height: 250px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            display: none;
+        }
+      
+        li{
+            padding-top: 5px;
+        }
+      
+          .imagenesRecetas:hover ul{
+            display: block;
+            animation: fadeInDown;
+            animation-duration: 1s;
+        }
+        
+    
     }
 
     .imgMobile{

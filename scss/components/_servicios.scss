@@ -20,8 +20,10 @@
         grid-template-columns: 1fr;
         width: 100%;
         color: #434343;
-        padding-bottom: 0px;
-        padding-top: 30px;
+
+        &__.distanciaMobile{
+            padding: 10px;
+        }
     }
 
     .serviciosMobileFaq{
@@ -30,11 +32,11 @@
         width: 100%;
         color: #434343;
         padding-top: 70px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     
     .distanciaMobile{
-        padding-top: 70px;
+        padding-top: 80px;
     }
     .noMostrar{
         display: none;
